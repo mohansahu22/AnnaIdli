@@ -1,0 +1,1265 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Anna Idli | Authentic South Indian Restaurant • Shankar Nagar, Raipur</title>
+<meta content="Experience authentic South Indian flavours at Anna Idli, Shankar Nagar, Raipur. Steaming fluffy idlis, crispy ghee roast dosas, fragrant sambar, and authentic filter coffee. 100% Pure Vegetarian." name="description">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#B71C1C',
+              redHover: '#991B1B',
+              redDark: '#7F1D1D',
+              gold: '#D97706',
+              goldLight: '#FBBF24',
+              goldMuted: '#B45309',
+              cream: '#FAF6EE',
+              creamDark: '#F3ECE1',
+              ivory: '#FDFBF7',
+              charcoal: '#1C1917',
+              leaf: '#2D5A27'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            'warm-sm': '0 2px 8px -2px rgba(183, 28, 28, 0.08), 0 1px 4px -1px rgba(0, 0, 0, 0.05)',
+            'warm-md': '0 8px 24px -4px rgba(183, 28, 28, 0.12), 0 4px 12px -2px rgba(0, 0, 0, 0.06)',
+            'warm-lg': '0 16px 36px -6px rgba(183, 28, 28, 0.18), 0 8px 16px -4px rgba(0, 0, 0, 0.08)'
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: StyleConfigurations -->
+<style data-purpose="base-layout">
+    ::selection {
+      background-color: #B71C1C;
+      color: #FAF6EE;
+    }
+    html {
+      scroll-padding-top: 5rem;
+    }
+    body {
+      background-color: #FAF6EE;
+      color: #1C1917;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .kolam-pattern {
+      background-image: radial-gradient(#D97706 0.75px, transparent 0.75px), radial-gradient(#B71C1C 0.75px, #FAF6EE 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      background-opacity: 0.03;
+    }
+  </style>
+<style data-purpose="custom-animations">
+    @keyframes floatSteam {
+      0% { transform: translateY(0px) scale(1); opacity: 0.35; }
+      50% { transform: translateY(-8px) scale(1.05); opacity: 0.6; }
+      100% { transform: translateY(0px) scale(1); opacity: 0.35; }
+    }
+    .animate-steam {
+      animation: floatSteam 4s ease-in-out infinite;
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+  </style>
+<!-- END: StyleConfigurations -->
+<!-- Schema.org JSON-LD for Restaurant SEO -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Anna Idli",
+    "image": "image.png",
+    "@id": "https://annaidli.in/#restaurant",
+    "url": "https://annaidli.in",
+    "telephone": "+918799904089",
+    "priceRange": "₹₹",
+    "servesCuisine": "South Indian, Pure Vegetarian",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Lodhipara Chowk, Pandri, Dharsiwa, Ward 11, Shankar Nagar",
+      "addressLocality": "Raipur",
+      "addressRegion": "Chhattisgarh",
+      "postalCode": "492004",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 21.2514,
+      "longitude": 81.6535
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "07:30",
+        "closes": "22:30"
+      }
+    ],
+    "hasMenu": "https://annaidli.in/#menu",
+    "acceptsReservations": "True"
+  }
+  </script>
+
+<!-- AOS & Lenis CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-scrolling iframe { pointer-events: none; }
+</style>
+</head>
+
+<body class="bg-brand-cream text-brand-charcoal antialiased selection:bg-brand-red selection:text-white" >
+<!-- BEGIN: AnnouncementBar -->
+<div class="bg-brand-redDark text-brand-cream text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2 border-b border-brand-red">
+<span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="">Now Serving Piping Hot Breakfast &amp; Filter Kaapi in Shankar Nagar, Raipur • Open Daily from 7:30 AM</span>
+</div>
+<!-- END: AnnouncementBar -->
+<!-- BEGIN: StickyNavBar -->
+<header class="sticky top-0 z-50 transition-all duration-300 bg-brand-ivory/95 backdrop-blur-md border-b border-amber-200/50 shadow-sm" data-purpose="sticky-navigation" id="main-header">
+<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Brand Logo & Locality Identity -->
+<a aria-label="Anna Idli Homepage" class="flex items-center gap-3.5 group" href="#hero">
+<div class="relative w-12 h-12 rounded-xl overflow-hidden p-0.5 bg-white shadow-md border border-amber-200 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+<img alt="Anna Idli Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1wQcrZbgYHdHaOq6TNctZKlk40Pk-vrK7nMzGs4T1WjB4eXa6kXu77a5DA5ekDDCvpRJ_b_6Th2UmQcE4I2ht1SegGfOU-eWs85PlgcccnvfYM41pLeL4dYBLUswqld9qb6_AT9Wfpz_oC4aW-NqHq-v53iIBVtggGfv2ZgO6JiN_wox9__nacYB6pgVI5jmJcbtNDNTJ-y-yEAIccHa9Tm7XGLaKAC2fPBZnFX3nrtB8HjmVLP-AjMOqY_OuaQQExCA">
+</div>
+<div class="flex flex-col">
+<span class="font-serif font-bold text-xl sm:text-2xl text-brand-red tracking-tight leading-none">ANNA IDLI</span>
+<span class="text-[11px] font-semibold text-brand-goldMuted uppercase tracking-widest mt-1">Shankar Nagar, Raipur</span>
+</div>
+</a>
+<!-- Desktop Navigation Menu -->
+<ul class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-stone-700">
+<li class=""><a class="hover:text-brand-red transition-colors py-1" href="#hero">Home</a></li>
+<li class=""><a class="hover:text-brand-red transition-colors py-1" href="#about">Our Story</a></li>
+<li class=""><a class="hover:text-brand-red transition-colors py-1" href="#specialties">Specialties</a></li>
+<li class=""><a class="hover:text-brand-red transition-colors py-1" href="#menu">Menu</a></li>
+<li class=""><a class="hover:text-brand-red transition-colors py-1" href="#gallery">Gallery</a></li>
+<li class=""><a class="hover:text-brand-red transition-colors py-1" href="#reviews">Reviews</a></li>
+<li class=""><a class="hover:text-brand-red transition-colors py-1" href="#contact">Location</a></li>
+</ul>
+<!-- Action Buttons Desktop -->
+<div class="hidden sm:flex items-center gap-3">
+<a aria-label="Call Anna Idli" class="p-2.5 rounded-full text-stone-700 hover:text-brand-red hover:bg-amber-100/50 transition-colors border border-amber-200/80" href="tel:+918799904089" title="Call Restaurant">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-brand-red hover:bg-brand-redHover text-white font-medium text-sm shadow-warm-sm transition-all duration-200 hover:shadow-warm-md hover:-translate-y-0.5" href="#reservation">
+<span class="">Book a Table</span>
+</a>
+</div>
+<!-- Mobile Hamburger Button -->
+<button aria-expanded="false" aria-label="Toggle mobile menu" class="lg:hidden p-2.5 rounded-lg text-stone-700 hover:bg-amber-100/50 focus:outline-none" id="mobile-menu-btn" type="button">
+<svg class="w-6 h-6" fill="none" id="hamburger-icon" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<svg class="w-6 h-6 hidden" fill="none" id="close-icon" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</nav>
+<!-- Mobile Drawer Navigation -->
+<div class="hidden lg:hidden border-b border-amber-200 bg-brand-ivory px-4 pt-3 pb-6 space-y-3 transition-all duration-300" id="mobile-menu">
+<ul class="space-y-2 text-base font-semibold text-stone-800">
+<li class=""><a class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-amber-100/60" href="#hero">Home</a></li>
+<li class=""><a class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-amber-100/60" href="#about">Our Story</a></li>
+<li class=""><a class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-amber-100/60" href="#specialties">Specialties</a></li>
+<li class=""><a class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-amber-100/60" href="#menu">Menu</a></li>
+<li class=""><a class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-amber-100/60" href="#gallery">Gallery</a></li>
+<li class=""><a class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-amber-100/60" href="#reviews">Reviews</a></li>
+<li class=""><a class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-amber-100/60" href="#contact">Location &amp; Hours</a></li>
+</ul>
+<div class="pt-3 border-t border-amber-200 flex flex-col gap-2.5">
+<a class="mobile-nav-link w-full py-3 text-center rounded-xl bg-brand-red text-white font-semibold text-sm shadow-warm-sm" href="#reservation">
+          Book a Table
+        </a>
+<a class="w-full py-2.5 text-center rounded-xl border border-brand-red text-brand-red font-medium text-sm" href="tel:+918799904089">
+          Call: +91 87999 04089
+        </a>
+</div>
+</div>
+</header>
+<!-- END: StickyNavBar -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative min-h-[92vh] flex items-center justify-center bg-stone-900 overflow-hidden" data-purpose="hero-banner" id="hero">
+<!-- Background Food Image with Vignette & Cinematic Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Authentic South Indian steamed fluffy white idlis served on banana leaf with chutneys and sambar" class="w-full h-full object-cover object-center scale-105 filter brightness-75 contrast-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPdknosLuLTcM5MCpR_Zoeh6eNeiAGUI1EfX7J_cWKI7rnglyIlYqdSNMpBS6H4flvzBL__oy9oFudnY_yD2cg-0fpx_0bvDEAFzi9pCGDj-bnl2EPNNLFSwv6cLDc3l_bXptfpfdJLtcpUSG4d_M_EOjPb16Q_pPvyJHChKYZeym5NEoixF1Hcu1D5eiYcsFhnForFKcDpRPoYvXHuzq1OGSl9Z7jhlUkiyVCqIK-cjPR_eks0rbYPA">
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/60 to-black/40"></div>
+<div class="absolute inset-0 bg-radial-vignette opacity-50 mix-blend-multiply"></div>
+</div>
+<!-- Hero Main Content -->
+<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center flex flex-col items-center">
+<!-- Kolam / Tradition Badge -->
+<div data-aos="fade-down" class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-ivory/15 backdrop-blur-md border border-amber-300/30 text-amber-200 text-xs sm:text-sm font-medium uppercase tracking-widest mb-6">
+<span class="text-amber-400">✦</span>
+<span class="">Tradition Served Fresh</span>
+<span class="text-amber-400">✦</span>
+</div>
+<h1 data-aos="fade-up" data-aos-delay="200" class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-6 text-balance drop-shadow-md">
+          A Symphony of Genuine <br class="hidden sm:inline">
+<span class="text-amber-300 italic font-display font-medium">South Indian Flavours</span>
+</h1>
+<p data-aos="fade-up" data-aos-delay="400" class="max-w-2xl text-base sm:text-xl text-stone-200 font-light leading-relaxed mb-10 text-balance drop-shadow">
+          Authentic South Indian flavours, made with care and served with warmth. Fluffy steaming idlis, pure ghee roast dosas, and slow-brewed Kumbakonam filter coffee right in Shankar Nagar, Raipur.
+        </p>
+<!-- CTA Buttons -->
+<div data-aos="fade-up" data-aos-delay="600" class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-brand-red hover:bg-brand-redHover text-white font-semibold text-base shadow-warm-lg transition-all duration-300 hover:scale-105 text-center flex items-center justify-center gap-2" href="#reservation">
+<span class="">Reserve a Table</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-semibold text-base transition-all duration-300 text-center" href="#menu">
+            Explore Full Menu
+          </a>
+</div>
+<!-- Trust Highlights Strip -->
+<div class="mt-14 pt-8 border-t border-white/15 w-full grid grid-cols-2 md:grid-cols-4 gap-4 text-stone-300 text-xs sm:text-sm font-medium">
+<div class="flex items-center justify-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+<span class="">100% Pure Vegetarian</span>
+</div>
+<div class="flex items-center justify-center gap-2">
+<span class="w-2 h-2 rounded-full bg-amber-400"></span>
+<span class="">Fresh Morning Batches</span>
+</div>
+<div class="flex items-center justify-center gap-2">
+<span class="w-2 h-2 rounded-full bg-amber-400"></span>
+<span class="">Pure Cow Ghee Used</span>
+</div>
+<div class="flex items-center justify-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+<span class="">Shankar Nagar, Raipur</span>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="mt-10 animate-bounce">
+<a aria-label="Scroll to content" class="text-stone-400 hover:text-white transition-colors" href="#about">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: AboutSection -->
+<section class="py-20 lg:py-28 bg-brand-cream relative" data-purpose="restaurant-story" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-red bg-red-50 border border-red-200 px-3.5 py-1 rounded-full inline-block mb-3">Our Heritage</span>
+<h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 tracking-tight">A Taste of South India, Made with Heart</h2>
+<div class="w-20 h-1 bg-brand-red mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Restaurant Exterior Image with Traditional Frame -->
+<div data-aos="fade-right" class="lg:col-span-6 relative"><div class="relative rounded-2xl overflow-hidden shadow-warm-lg border-4 border-white bg-stone-100 group"><div class="relative h-96 sm:h-[460px] overflow-hidden"><img alt="Anna Idli Shankar Nagar Raipur entrance with traditional welcome statue and Mangalore tiled sloped porch" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPw5L6P7GXIgZK-XrpKTncSoGAMm6NzKiF37ZRFrNhGWD4fW5Ql5eUz0RTCiHjoSiatJg8oXjmh7zhlDLXTBiji3RNuVM2MSqAOveyPYyBdMVRvA0pG_-8xIC3cSgPOjgvMJ4-5-qX6W0bvOEpgFBZ2G9SoP1o96PUvgZKx4wK7WxJ6H8kMdO1x98J48xIf9v4kgzCSor4xeJby1TgyRYQgX836B8TjG17tJGNbYdexhrl2kla3u99OYT1O-vHAvb9S1I"><div class="absolute inset-0 bg-gradient-to-t from-stone-950/85 via-stone-950/30 to-transparent"></div></div><div class="absolute top-4 left-4 inline-flex items-center gap-2 bg-brand-charcoal/90 backdrop-blur-md border border-amber-300/40 text-amber-300 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase shadow-md"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span><span class="">Est. Shankar Nagar, Raipur</span></div><div class="absolute bottom-0 inset-x-0 p-6 text-white"><span class="text-xs uppercase font-semibold text-amber-300 tracking-wider block mb-1">Heritage Architecture</span><p class="font-serif text-xl sm:text-2xl font-bold leading-tight">Traditional Porch &amp; Welcoming Hospitality</p><p class="text-xs sm:text-sm text-stone-200 mt-1">Mangalore-tiled eaves, carved teak pillars, and authentic South Indian culinary craftsmanship right here in Raipur.</p></div></div><div class="mt-8 pt-4 grid grid-cols-3 gap-2 sm:gap-3 text-center"><div class="p-3 rounded-xl bg-white/90 border border-amber-100 shadow-sm"><span class="block text-xs font-bold text-brand-red uppercase tracking-wider">Daily Fresh</span><span class="text-[11px] text-stone-600 block mt-0.5">Batters Fermented 12+ Hrs</span></div><div class="p-3 rounded-xl bg-white/90 border border-amber-100 shadow-sm"><span class="block text-xs font-bold text-brand-red uppercase tracking-wider">Stone Ground</span><span class="text-[11px] text-stone-600 block mt-0.5">Traditional Wet Grinders</span></div><div class="p-3 rounded-xl bg-white/90 border border-amber-100 shadow-sm"><span class="block text-xs font-bold text-brand-red uppercase tracking-wider">100% Pure Desi Ghee</span><span class="text-[11px] text-stone-600 block mt-0.5">Aromatic Golden Roasts</span></div></div></div>
+<!-- Narrative Content -->
+<div data-aos="fade-left" class="lg:col-span-6 space-y-6">
+<div class="space-y-4 text-stone-700 leading-relaxed text-base sm:text-lg">
+<p class="font-serif text-xl sm:text-2xl text-stone-900 leading-snug font-medium">
+                "We believe great South Indian cooking begins with utmost reverence for patience and pure ingredients."
+              </p>
+<p class="">
+                At <strong class="text-brand-red font-semibold">Anna Idli</strong>, our kitchen follows time-honored preparation traditions: stone-grinding whole urad dal and parboiled rice, allowing the batter to naturally ferment over hours until light and aerated.
+              </p>
+<p class="">
+                From pure aromatic ghee glistening over golden roast dosas to the freshly pounded coriander and red chili in our sambar, every meal is prepared to bring genuine culinary hospitality from the Southern states directly to Shankar Nagar, Raipur.
+              </p>
+</div>
+<!-- 4 Pillar Feature Matrix -->
+<div class="grid grid-cols-2 gap-4 pt-4">
+<div class="p-4 rounded-xl bg-white border border-amber-100 shadow-sm">
+<span class="text-brand-red text-xl font-bold block mb-1">100% Satvik</span>
+<span class="text-sm text-stone-600 font-medium">Pure vegetarian kitchen with uncompromising cleanliness standards.</span>
+</div>
+<div class="p-4 rounded-xl bg-white border border-amber-100 shadow-sm">
+<span class="text-brand-red text-xl font-bold block mb-1">Stone Ground</span>
+<span class="text-sm text-stone-600 font-medium">Natural slow-fermented batters for cloud-like softness.</span>
+</div>
+<div class="p-4 rounded-xl bg-white border border-amber-100 shadow-sm">
+<span class="text-brand-red text-xl font-bold block mb-1">Aroma of Ghee</span>
+<span class="text-sm text-stone-600 font-medium">Authentic pure cow ghee roasted dosas and pods.</span>
+</div>
+<div class="p-4 rounded-xl bg-white border border-amber-100 shadow-sm">
+<span class="text-brand-red text-xl font-bold block mb-1">Family Seating</span>
+<span class="text-sm text-stone-600 font-medium">Comfortable, air-conditioned dining designed for groups.</span>
+</div>
+</div>
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 text-brand-red font-bold text-base hover:text-brand-redDark group" href="#specialties">
+<span class="">Discover our Signature Dishes</span>
+<span class="transform group-hover:translate-x-1 transition-transform">→</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: SignatureDishesSection -->
+<section class="py-20 bg-brand-ivory border-y border-amber-200/60" data-purpose="signature-dishes" id="specialties">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div data-aos="fade-up" class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-brand-goldMuted bg-amber-50 border border-amber-200 px-3.5 py-1 rounded-full inline-block mb-3">Chef’s Selections</span>
+<h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900">Made to Be Remembered</h2>
+</div>
+<p class="mt-4 md:mt-0 text-stone-600 max-w-md text-sm sm:text-base">
+            Handcrafted South Indian classics prepared fresh to order using heirloom spices and unhurried craftsmanship.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Dish 1: Fluffy Idli Vada Feast -->
+<article data-aos="fade-up" class="bg-white rounded-2xl overflow-hidden border border-amber-100 shadow-warm-sm hover:shadow-warm-lg transition-all duration-300 group flex flex-col justify-between">
+<div>
+<div class="relative h-64 overflow-hidden">
+<img alt="Steaming hot authentic South Indian Idlis on banana leaf" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPdknosLuLTcM5MCpR_Zoeh6eNeiAGUI1EfX7J_cWKI7rnglyIlYqdSNMpBS6H4flvzBL__oy9oFudnY_yD2cg-0fpx_0bvDEAFzi9pCGDj-bnl2EPNNLFSwv6cLDc3l_bXptfpfdJLtcpUSG4d_M_EOjPb16Q_pPvyJHChKYZeym5NEoixF1Hcu1D5eiYcsFhnForFKcDpRPoYvXHuzq1OGSl9Z7jhlUkiyVCqIK-cjPR_eks0rbYPA">
+<span class="absolute top-4 left-4 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">Breakfast Hero</span>
+</div>
+<div class="p-6">
+<h3 class="font-serif text-2xl font-bold text-stone-900 mb-2 group-hover:text-brand-red transition-colors">Steaming Traditional Ghee Idli</h3>
+<p class="text-stone-600 text-sm leading-relaxed mb-4">Piping hot, cloud-soft steamed rice cakes drizzled with pure aromatic desi cow ghee, served with simmering drumstick sambar and fresh ground coconut &amp; tomato chutneys.</p>
+<div class="flex items-center gap-3 text-xs text-stone-500 font-medium">
+<span class="px-2.5 py-1 rounded bg-stone-100">Pure Ghee</span>
+<span class="px-2.5 py-1 rounded bg-stone-100">Fresh Chutneys</span>
+<span class="px-2.5 py-1 rounded bg-emerald-50 text-emerald-800">Chef Special</span>
+</div>
+</div>
+</div>
+<div class="px-6 pb-6 pt-0">
+<a class="block w-full text-center py-2.5 rounded-xl border border-stone-300 hover:border-brand-red hover:bg-brand-red hover:text-white font-semibold text-sm transition-colors" href="#reservation">
+                Order for Dine-In
+              </a>
+</div>
+</article>
+<!-- Dish 2: Crispy Ghee Roast Masala Dosa -->
+<article data-aos="fade-up" class="bg-white rounded-2xl overflow-hidden border border-amber-100 shadow-warm-sm hover:shadow-warm-lg transition-all duration-300 group flex flex-col justify-between">
+<div>
+<div class="relative h-64 overflow-hidden">
+<img alt="Crispy Triangular Masala Dosa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhSDYgetWzK-pabHAPtXHWjEqixvi72vg7DxZ9IEBzb8QzbrxVQpb87YnSmY4adS-uJqs5HKutM8rJrqc2QEiq99nQU7g96rnL5589tJPg6Lf2R0BK6PuX9yZPaBAUxhb67sZh8hXKbVNqEbEKgxMDG5t4Ejnh8hVYTIlekck9cVLW_wjHxJLzuX8wuiMb8AfTB2lcaVmrgHcoMALBHgO3gy0K7czwEcODdvnkSBL5gfjnTbx-HYCYPA">
+<span class="absolute top-4 left-4 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">Guest Favourite</span>
+</div>
+<div class="p-6">
+<h3 class="font-serif text-2xl font-bold text-stone-900 mb-2 group-hover:text-brand-red transition-colors">Mysore Ghee Masala Dosa</h3>
+<p class="text-stone-600 text-sm leading-relaxed mb-4">
+                  Crisped to perfection over seasoned cast-iron pans with fragrant pure ghee, stuffed with seasoned turmeric-tempered potato mash and our signature red garlic paste.
+                </p>
+<div class="flex items-center gap-3 text-xs text-stone-500 font-medium">
+<span class="px-2.5 py-1 rounded bg-stone-100">Super Crispy</span>
+<span class="px-2.5 py-1 rounded bg-stone-100">Triple Chutneys</span>
+<span class="px-2.5 py-1 rounded bg-amber-50 text-amber-800">Must Try</span>
+</div>
+</div>
+</div>
+<div class="px-6 pb-6 pt-0">
+<a class="block w-full text-center py-2.5 rounded-xl border border-stone-300 hover:border-brand-red hover:bg-brand-red hover:text-white font-semibold text-sm transition-colors" href="#reservation">
+                Order for Dine-In
+              </a>
+</div>
+</article>
+<!-- Dish 3: Kumbakonam Filter Coffee -->
+<article data-aos="fade-up" class="bg-white rounded-2xl overflow-hidden border border-amber-100 shadow-warm-sm hover:shadow-warm-lg transition-all duration-300 group flex flex-col justify-between">
+<div>
+<div class="relative h-64 overflow-hidden">
+<img alt="Traditional frothy South Indian filter coffee in brass dabara tumbler" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3wwfz1T4Nip0sw0cTifSJ8ZJPfN4wq5mpDjK3EeOlxZCEQmo-QPfnwk2yBYGxB7dTeot2bNz7AzDDA0gndCn_XhDVn3gs0w3U6ZpWcea5l9BRbfq3KI8Iikl0WgBoioT-Pbfv9wN-Ji8ctp49JqmZmdPTwcVk3Xe7mrtGow8oQ4GG9yW1nZo2By0eOJYuSclZe25-9FiZfO-W6dvDLdGYmcd9NSwZwPzceBbSMw0mlvjoM7ZMo-hWcA">
+<span class="absolute top-4 left-4 bg-brand-charcoal text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">Signature Brew</span>
+</div>
+<div class="p-6">
+<h3 class="font-serif text-2xl font-bold text-stone-900 mb-2 group-hover:text-brand-red transition-colors">Brass Davarah Filter Kaapi</h3>
+<p class="text-stone-600 text-sm leading-relaxed mb-4">
+                  Freshly ground plantation beans brewed through brass drip filters, blended with boiling full-cream milk and aerated back and forth into rich frothy decoction.
+                </p>
+<div class="flex items-center gap-3 text-xs text-stone-500 font-medium">
+<span class="px-2.5 py-1 rounded bg-stone-100">Brass Dabara</span>
+<span class="px-2.5 py-1 rounded bg-stone-100">Strong Chicory Decoction</span>
+<span class="px-2.5 py-1 rounded bg-rose-50 text-rose-800">Iconic</span>
+</div>
+</div>
+</div>
+<div class="px-6 pb-6 pt-0">
+<a class="block w-full text-center py-2.5 rounded-xl border border-stone-300 hover:border-brand-red hover:bg-brand-red hover:text-white font-semibold text-sm transition-colors" href="#reservation">
+                Order for Dine-In
+              </a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: SignatureDishesSection -->
+<!-- BEGIN: InteractiveMenuSection -->
+<section class="py-20 lg:py-28 bg-brand-cream relative" data-purpose="restaurant-menu" id="menu">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-12">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-red bg-red-50 border border-red-200 px-3.5 py-1 rounded-full inline-block mb-3">Crafted With Care</span>
+<h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 tracking-tight">Our Daily Menu</h2>
+<p class="text-stone-600 text-base sm:text-lg mt-3">From morning breakfast staples to wholesome South Indian meals and evening filter coffee.</p>
+</div>
+<!-- Menu Tabs Filter -->
+<div class="flex items-center justify-center flex-wrap gap-2 sm:gap-3 mb-12" id="menu-filter-container">
+<button class="menu-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-brand-red text-white shadow-warm-sm" data-filter="all" type="button">
+            All Items
+          </button>
+<button class="menu-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-white text-stone-700 hover:bg-amber-100/60 border border-amber-200" data-filter="idli" type="button">
+            Idli Specials
+          </button>
+<button class="menu-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-white text-stone-700 hover:bg-amber-100/60 border border-amber-200" data-filter="dosa" type="button">
+            Dosa Counter
+          </button>
+<button class="menu-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-white text-stone-700 hover:bg-amber-100/60 border border-amber-200" data-filter="vada-snacks" type="button">
+            Snacks &amp; Vada
+          </button>
+<button class="menu-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-white text-stone-700 hover:bg-amber-100/60 border border-amber-200" data-filter="meals" type="button">
+            South Meals
+          </button>
+<button class="menu-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-white text-stone-700 hover:bg-amber-100/60 border border-amber-200" data-filter="beverages" type="button">
+            Kaapi &amp; Beverages
+          </button>
+</div>
+<!-- Menu Items Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="menu-grid">
+<!-- Item 1 -->
+<div data-aos="fade-up" class="menu-item bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex items-start justify-between gap-4 transition-all hover:border-brand-red/30" data-category="idli">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded border border-emerald-600 flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+</span>
+<h4 class="font-serif font-bold text-lg text-stone-900">Steaming Idli Sambar (2 pcs)</h4>
+</div>
+<p class="text-xs sm:text-sm text-stone-600">Pillow-soft rice cakes served hot with drumstick sambar and coconut chutney.</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[11px] font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">All Day</span>
+<span class="text-[11px] font-semibold text-stone-600 bg-stone-100 px-2 py-0.5 rounded">Jain Option Available</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-serif font-bold text-lg text-brand-red">₹70</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div data-aos="fade-up" class="menu-item bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex items-start justify-between gap-4 transition-all hover:border-brand-red/30" data-category="idli">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded border border-emerald-600 flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+</span>
+<h4 class="font-serif font-bold text-lg text-stone-900">Ghee Podi Button Idli</h4>
+<span class="text-[10px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Chef Pick</span>
+</div>
+<p class="text-xs sm:text-sm text-stone-600">Bite-sized mini idlis tossed generously in roasted gunpowder podi and desi cow ghee.</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[11px] font-semibold text-amber-800 bg-amber-50 px-2 py-0.5 rounded">Spicy Podi</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-serif font-bold text-lg text-brand-red">₹110</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div data-aos="fade-up" class="menu-item bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex items-start justify-between gap-4 transition-all hover:border-brand-red/30" data-category="vada-snacks">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded border border-emerald-600 flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+</span>
+<h4 class="font-serif font-bold text-lg text-stone-900">Medu Vada Sambar (2 pcs)</h4>
+</div>
+<p class="text-xs sm:text-sm text-stone-600">Crunchy golden urad fritters infused with peppercorn and fresh ginger.</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[11px] font-semibold text-stone-600 bg-stone-100 px-2 py-0.5 rounded">Hot &amp; Crisp</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-serif font-bold text-lg text-brand-red">₹85</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div data-aos="fade-up" class="menu-item bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex items-start justify-between gap-4 transition-all hover:border-brand-red/30" data-category="dosa">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded border border-emerald-600 flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+</span>
+<h4 class="font-serif font-bold text-lg text-stone-900">Traditional Plain Ghee Roast Dosa</h4>
+</div>
+<p class="text-xs sm:text-sm text-stone-600">Paper-thin golden crisp crepe roasted in fragrant pure desi ghee.</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[11px] font-semibold text-stone-600 bg-stone-100 px-2 py-0.5 rounded">Classic Favorite</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-serif font-bold text-lg text-brand-red">₹110</span>
+</div>
+</div>
+<!-- Item 5 -->
+<div data-aos="fade-up" class="menu-item bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex items-start justify-between gap-4 transition-all hover:border-brand-red/30" data-category="dosa">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded border border-emerald-600 flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+</span>
+<h4 class="font-serif font-bold text-lg text-stone-900">Mysore Masala Dosa</h4>
+<span class="text-[10px] font-bold uppercase tracking-wider text-rose-700 bg-rose-100 px-2 py-0.5 rounded-full">Bestseller</span>
+</div>
+<p class="text-xs sm:text-sm text-stone-600">Spread with spicy red chili-garlic chutney and stuffed with spiced potato bhaji.</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[11px] font-semibold text-rose-800 bg-rose-50 px-2 py-0.5 rounded">Signature</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-serif font-bold text-lg text-brand-red">₹130</span>
+</div>
+</div>
+<!-- Item 6 -->
+<div data-aos="fade-up" class="menu-item bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex items-start justify-between gap-4 transition-all hover:border-brand-red/30" data-category="dosa">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded border border-emerald-600 flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+</span>
+<h4 class="font-serif font-bold text-lg text-stone-900">Onion Rava Masala Dosa</h4>
+</div>
+<p class="text-xs sm:text-sm text-stone-600">Semolina crepe embedded with fresh cracked cumin, curry leaves, and crunchy onions.</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[11px] font-semibold text-stone-600 bg-stone-100 px-2 py-0.5 rounded">Extra Crisp</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-serif font-bold text-lg text-brand-red">₹140</span>
+</div>
+</div>
+<!-- Item 7 -->
+<div data-aos="fade-up" class="menu-item bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex items-start justify-between gap-4 transition-all hover:border-brand-red/30" data-category="dosa">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded border border-emerald-600 flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+</span>
+<h4 class="font-serif font-bold text-lg text-stone-900">Cheese Burst Masala Dosa</h4>
+</div>
+<p class="text-xs sm:text-sm text-stone-600">Loaded with melted mozzarella and cheddar cheese over seasoned potato filling.</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[11px] font-semibold text-amber-800 bg-amber-50 px-2 py-0.5 rounded">Kids Favorite</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-serif font-bold text-lg text-brand-red">₹160</span>
+</div>
+</div>
+<!-- Item 8 -->
+<div data-aos="fade-up" class="menu-item bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex items-start justify-between gap-4 transition-all hover:border-brand-red/30" data-category="meals">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded border border-emerald-600 flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+</span>
+<h4 class="font-serif font-bold text-lg text-stone-900">South Indian Mini Thali</h4>
+<span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Lunch Only</span>
+</div>
+<p class="text-xs sm:text-sm text-stone-600">Steamed rice, sambar, rasam, kootu poriyal, curd, papad, pickle, and sweet paysam.</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[11px] font-semibold text-stone-600 bg-stone-100 px-2 py-0.5 rounded">Complete Meal</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-serif font-bold text-lg text-brand-red">₹180</span>
+</div>
+</div>
+<!-- Item 9 -->
+<div data-aos="fade-up" class="menu-item bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex items-start justify-between gap-4 transition-all hover:border-brand-red/30" data-category="meals">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded border border-emerald-600 flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+</span>
+<h4 class="font-serif font-bold text-lg text-stone-900">Tempered Bagala Bath (Curd Rice)</h4>
+</div>
+<p class="text-xs sm:text-sm text-stone-600">Creamy south-style curd rice tempered with mustard, curry leaves, ginger &amp; pomegranate.</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[11px] font-semibold text-stone-600 bg-stone-100 px-2 py-0.5 rounded">Cooling &amp; Light</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-serif font-bold text-lg text-brand-red">₹90</span>
+</div>
+</div>
+<!-- Item 10 -->
+<div data-aos="fade-up" class="menu-item bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex items-start justify-between gap-4 transition-all hover:border-brand-red/30" data-category="beverages">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded border border-emerald-600 flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+</span>
+<h4 class="font-serif font-bold text-lg text-stone-900">Authentic South Indian Filter Coffee</h4>
+<span class="text-[10px] font-bold uppercase tracking-wider text-stone-700 bg-stone-100 px-2 py-0.5 rounded-full">Famous</span>
+</div>
+<p class="text-xs sm:text-sm text-stone-600">Traditional Kumbakonam-style filter brew served frothy in brass Davarah tumbler.</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[11px] font-semibold text-stone-600 bg-stone-100 px-2 py-0.5 rounded">Fresh Decoction</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-serif font-bold text-lg text-brand-red">₹50</span>
+</div>
+</div>
+<!-- Item 11 -->
+<div data-aos="fade-up" class="menu-item bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex items-start justify-between gap-4 transition-all hover:border-brand-red/30" data-category="beverages">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded border border-emerald-600 flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+</span>
+<h4 class="font-serif font-bold text-lg text-stone-900">Spiced Masala Buttermilk (Moru)</h4>
+</div>
+<p class="text-xs sm:text-sm text-stone-600">Refreshing churned buttermilk infused with roasted cumin, green chili, and fresh coriander.</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[11px] font-semibold text-stone-600 bg-stone-100 px-2 py-0.5 rounded">Digestive</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-serif font-bold text-lg text-brand-red">₹60</span>
+</div>
+</div>
+</div>
+<!-- Note below menu -->
+<div class="mt-12 text-center text-xs text-stone-500 bg-amber-50/60 p-4 rounded-xl border border-amber-100 max-w-2xl mx-auto">
+          * Prices are inclusive of all taxes. Special Jain preparations (without onion and garlic) are cheerfully crafted upon request.
+        </div>
+</div>
+</section>
+<!-- END: InteractiveMenuSection -->
+<!-- BEGIN: CinematicBanner -->
+<section class="relative py-24 bg-stone-950 overflow-hidden text-center" data-purpose="cinematic-quote">
+<div class="absolute inset-0 opacity-25">
+<img alt="Close up traditional South Indian coffee pour" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN_GAu-Gzdao2iT-X3m1_tXcQaw2CZojsDjlD5FFls_MLVD6zwlktl7h2EWFZKpAp5eHtqSD9VFGDOWp6jJMy_SyRlEjlwybweQyzjsR6o767ctLWhwjEWOPI3NacL48I9ScUE-Iho7XBWLM-w8yioaUtvuq8yGUF_fVnqUO1jAPyZptzh1T-wP30R2Vb3vXkHadxNCkxQ8p0IWhPKg3SMdJLL7IRybhn5xRCsIw6StkWu89sgJEuK1g">
+</div>
+<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6">
+<div class="text-amber-400 font-serif text-3xl mb-3">❦</div>
+<blockquote data-aos="zoom-in" class="font-serif text-2xl sm:text-4xl md:text-5xl font-medium text-white leading-tight mb-6">
+          “Simple Ingredients. Authentic Flavours. <br>
+<span class="text-amber-300 italic font-display">A Taste Worth Returning For.</span>”
+        </blockquote>
+<p class="text-stone-300 text-sm sm:text-base font-light tracking-wide uppercase">
+          Serving Raipur with Uncompromising Authenticity Since Day One
+        </p>
+</div>
+</section>
+<!-- END: CinematicBanner -->
+<!-- BEGIN: GallerySection -->
+<section class="py-20 bg-brand-ivory" data-purpose="restaurant-gallery" id="gallery">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-14">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-red bg-red-50 border border-red-200 px-3.5 py-1 rounded-full inline-block mb-3">Visual Journey</span>
+<h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 tracking-tight">Moments &amp; Flavours</h2>
+<p class="text-stone-600 text-base mt-3">Take a look inside our kitchen, restaurant entrance, and genuine preparations.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Image 1 -->
+<div data-aos="zoom-in" class="group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm aspect-square bg-stone-100 gallery-trigger" data-caption="Crispy South Indian Medu Vada served fresh with chutneys and sambar" data-img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBt6mXRs9FVzkSNjIkrns7hBmGCSFKtkf2e-0fOx7CJuTf3Khp88_swPxmb6l5KtAkIvbfMHU3UPTzNoY9uZreXYhQc6xbskkx1qIyONXtzsM6wniAEDW9_Rbht_qIi7emmSAlUj4cAOX7LDPpeAWKo6bggcpb3MV6dtN5knkD6FP6u3VyS8kgiBiN0RXmyaRd9H-vHMsNhxPhisP1kHtL9stdV4jYJce7Mhct6ieSNPQTqoN902VJ_A">
+<img alt="Crispy Medu Vada with Chutneys" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBt6mXRs9FVzkSNjIkrns7hBmGCSFKtkf2e-0fOx7CJuTf3Khp88_swPxmb6l5KtAkIvbfMHU3UPTzNoY9uZreXYhQc6xbskkx1qIyONXtzsM6wniAEDW9_Rbht_qIi7emmSAlUj4cAOX7LDPpeAWKo6bggcpb3MV6dtN5knkD6FP6u3VyS8kgiBiN0RXmyaRd9H-vHMsNhxPhisP1kHtL9stdV4jYJce7Mhct6ieSNPQTqoN902VJ_A">
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+<span class="text-white text-xs font-medium bg-black/60 px-3 py-1.5 rounded-full backdrop-blur-sm">Crispy Medu Vada</span>
+</div>
+</div>
+<!-- Image 2 -->
+<div data-aos="zoom-in" class="group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm aspect-square bg-stone-100 gallery-trigger" data-caption="Ghee Podi Idli - Mini steamed rice cakes tossed in roasted podi and pure ghee" data-img-src="1376x768">
+<img alt="Ghee Podi Idli" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcZvUgzgNtX4LYhjJIpjpSO3HbVqhzBDwWcPzvzFHbawGn03cKNOjBN9Go0Eny9pMGkYjyUQGPdZ3O4PWJ-HdNkAmOG-kr1S5uV1tffNkprgHobCzFZZCba6WJFK0IX4ulbA9OvqGakjLVq-WM1pxql-8DSeqhmsvoMeJo4z18z0Q1LeQxZU-3V1yUi7nrv1RMSCHYY2s-Yr4ByLxwbbXSXSsb05gY8LVG8vs8dZx--DGO4ETAnPiwFHyQXnA9hkX86ej1rfF_QwYDmZ0">
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+<span class="text-white text-xs font-medium bg-black/60 px-3 py-1.5 rounded-full backdrop-blur-sm">Ghee Podi Idli</span>
+</div>
+</div>
+<!-- Image 3 -->
+<div data-aos="zoom-in" class="group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm aspect-square bg-stone-100 gallery-trigger" data-caption="Crispy Triangular Masala Dosa" data-img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhSDYgetWzK-pabHAPtXHWjEqixvi72vg7DxZ9IEBzb8QzbrxVQpb87YnSmY4adS-uJqs5HKutM8rJrqc2QEiq99nQU7g96rnL5589tJPg6Lf2R0BK6PuX9yZPaBAUxhb67sZh8hXKbVNqEbEKgxMDG5t4Ejnh8hVYTIlekck9cVLW_wjHxJLzuX8wuiMb8AfTB2lcaVmrgHcoMALBHgO3gy0K7czwEcODdvnkSBL5gfjnTbx-HYCYPA">
+<img alt="Crispy Triangular Masala Dosa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhSDYgetWzK-pabHAPtXHWjEqixvi72vg7DxZ9IEBzb8QzbrxVQpb87YnSmY4adS-uJqs5HKutM8rJrqc2QEiq99nQU7g96rnL5589tJPg6Lf2R0BK6PuX9yZPaBAUxhb67sZh8hXKbVNqEbEKgxMDG5t4Ejnh8hVYTIlekck9cVLW_wjHxJLzuX8wuiMb8AfTB2lcaVmrgHcoMALBHgO3gy0K7czwEcODdvnkSBL5gfjnTbx-HYCYPA">
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+<span class="text-white text-xs font-medium bg-black/60 px-3 py-1.5 rounded-full backdrop-blur-sm">Crispy Ghee Roast</span>
+</div>
+</div>
+<!-- Image 4 -->
+<div data-aos="zoom-in" class="group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm aspect-square bg-stone-100 gallery-trigger" data-caption="Tasty Batata Vada - Golden crispy spiced potato dumplings served with fresh chutneys and fried chilies" data-img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9NJSFT3qGmVMi8OwiUPZku7nCjEICpTtWsDNeLNsHeNH5kJOxX_KUa0LPQ243b9W1w7sTsFv16UVCWPOouv8FXObYEkEZng5luV3C-cwcMbqaGOqLe8Lr-oxFxJmHW3vAy65PMEx1L0uJOYgJZ03PILBXAsccYy6xO8T9KKrqQl-zYCzF1gtjhCygdo_0mlNheGoYUuMdbihdvv44sJXhAw3PIGP9VSdmlB3lce6SJyYta5bXeiGwJQ"><img alt="Tasty Batata Vada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9NJSFT3qGmVMi8OwiUPZku7nCjEICpTtWsDNeLNsHeNH5kJOxX_KUa0LPQ243b9W1w7sTsFv16UVCWPOouv8FXObYEkEZng5luV3C-cwcMbqaGOqLe8Lr-oxFxJmHW3vAy65PMEx1L0uJOYgJZ03PILBXAsccYy6xO8T9KKrqQl-zYCzF1gtjhCygdo_0mlNheGoYUuMdbihdvv44sJXhAw3PIGP9VSdmlB3lce6SJyYta5bXeiGwJQ">
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4"><span class="text-white text-xs font-medium bg-black/60 px-3 py-1.5 rounded-full backdrop-blur-sm">Tasty Batata Vada</span></div></div>
+</div>
+</div>
+</section>
+<!-- END: GallerySection -->
+<!-- BEGIN: ReviewsSection -->
+<section class="py-20 lg:py-24 bg-brand-cream border-t border-amber-200/50" data-purpose="guest-testimonials" id="reviews">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-14">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-goldMuted bg-amber-50 border border-amber-200 px-3.5 py-1 rounded-full inline-block mb-3">Words from Our Guests</span>
+<h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 tracking-tight">Cherished by Food Lovers in Raipur</h2>
+<div class="flex items-center justify-center gap-1.5 mt-3 text-amber-500">
+<span class="">★</span><span class="">★</span><span class="">★</span><span class="">★</span><span class="">★</span>
+<span class="text-xs font-bold text-stone-600 ml-2">4.8 / 5 Rated Experience</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review Card 1 -->
+<div data-aos="fade-up" class="bg-white p-7 rounded-2xl border border-amber-100 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-500 text-sm mb-4">★★★★★</div>
+<p class="text-stone-700 text-sm leading-relaxed mb-6 italic font-display text-lg">
+                "Finding truly authentic South Indian breakfast in Shankar Nagar used to be difficult until Anna Idli opened. The idlis melt right away and the coconut chutney tastes just like home in Chennai."
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-stone-100">
+<div class="w-10 h-10 rounded-full bg-red-100 text-brand-red font-bold flex items-center justify-center text-sm">
+                AK
+              </div>
+<div>
+<p class="font-bold text-stone-900 text-sm">Ananya K.</p>
+<p class="text-xs text-stone-500">Shankar Nagar Resident • Regular Diner</p>
+</div>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div data-aos="fade-up" class="bg-white p-7 rounded-2xl border border-amber-100 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-500 text-sm mb-4">★★★★★</div>
+<p class="text-stone-700 text-sm leading-relaxed mb-6 italic font-display text-lg">
+                "The Mysore Masala Dosa has that authentic red garlic paste layer and crispiness without being greasy. Make sure to end your meal with their frothy Filter Kaapi!"
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-stone-100">
+<div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-sm">
+                RM
+              </div>
+<div>
+<p class="font-bold text-stone-900 text-sm">Rajesh Mishra</p>
+<p class="text-xs text-stone-500">Local Guide, Raipur</p>
+</div>
+</div>
+</div>
+<!-- Review Card 3 -->
+<div data-aos="fade-up" class="bg-white p-7 rounded-2xl border border-amber-100 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-500 text-sm mb-4">★★★★★</div>
+<p class="text-stone-700 text-sm leading-relaxed mb-6 italic font-display text-lg">
+                "We came here for Sunday family breakfast. Clean dining hall, courteous staff, and the Button Podi Idlis were outstanding! Very reasonable prices for such pure quality."
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-stone-100">
+<div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-sm">
+                PS
+              </div>
+<div>
+<p class="font-bold text-stone-900 text-sm">Pooja Sharma</p>
+<p class="text-xs text-stone-500">Pandri, Raipur</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ReviewsSection -->
+<!-- BEGIN: ReservationSection -->
+<section class="py-20 lg:py-28 bg-brand-ivory relative" data-purpose="table-reservation-form" id="reservation">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-red bg-red-50 border border-red-200 px-3.5 py-1 rounded-full inline-block mb-3">Priority Seating</span>
+<h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 tracking-tight">Reserve Your Table</h2>
+<p class="text-stone-600 text-sm sm:text-base mt-2">Guarantee smooth family dining or weekend breakfast rush seating.</p>
+</div>
+<div data-aos="zoom-in-up" class="bg-white rounded-3xl p-6 sm:p-10 border border-amber-200 shadow-warm-lg">
+<!-- Booking Form -->
+<form class="space-y-6" id="table-reservation-form" novalidate="">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Full Name -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2" for="guest-name">Full Name *</label>
+<input class="w-full rounded-xl border-stone-300 focus:border-brand-red focus:ring-brand-red text-stone-800 text-sm py-3 px-4 bg-stone-50/50" id="guest-name" name="guestName" placeholder="e.g. Ramesh Verma" required="" type="text">
+<span class="form-error text-xs text-brand-red mt-1 hidden">Please provide your full name.</span>
+</div>
+<!-- Phone Number -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2" for="guest-phone">Mobile Number (+91) *</label>
+<input class="w-full rounded-xl border-stone-300 focus:border-brand-red focus:ring-brand-red text-stone-800 text-sm py-3 px-4 bg-stone-50/50" id="guest-phone" name="guestPhone" pattern="[0-9]{10}" placeholder="10-digit mobile number" required="" type="tel">
+<span class="form-error text-xs text-brand-red mt-1 hidden">Please enter a valid 10-digit mobile number.</span>
+</div>
+<!-- Date Selection -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2" for="booking-date">Preferred Date *</label>
+<input class="w-full rounded-xl border-stone-300 focus:border-brand-red focus:ring-brand-red text-stone-800 text-sm py-3 px-4 bg-stone-50/50" id="booking-date" min="2026-09-27" name="bookingDate" required="" type="date">
+<span class="form-error text-xs text-brand-red mt-1 hidden">Please select a valid date.</span>
+</div>
+<!-- Time Slot -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2" for="booking-slot">Time Slot *</label>
+<select class="w-full rounded-xl border-stone-300 focus:border-brand-red focus:ring-brand-red text-stone-800 text-sm py-3 px-4 bg-stone-50/50" id="booking-slot" name="bookingSlot" required="">
+<option disabled="" selected="" value="">Select dining session</option>
+<option value="08:00 AM">Morning Breakfast (08:00 AM - 09:30 AM)</option>
+<option value="10:00 AM">Mid-Morning Rush (10:00 AM - 11:30 AM)</option>
+<option value="01:00 PM">South Indian Lunch (01:00 PM - 02:30 PM)</option>
+<option value="05:30 PM">Evening Snacks &amp; Kaapi (05:30 PM - 07:00 PM)</option>
+<option value="08:00 PM">Dinner (08:00 PM - 09:30 PM)</option>
+<option value="09:30 PM">Late Dinner (09:30 PM - 10:15 PM)</option>
+</select>
+<span class="form-error text-xs text-brand-red mt-1 hidden">Please choose a dining slot.</span>
+</div>
+<!-- Number of Guests -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2" for="guest-count">Number of Guests *</label>
+<select class="w-full rounded-xl border-stone-300 focus:border-brand-red focus:ring-brand-red text-stone-800 text-sm py-3 px-4 bg-stone-50/50" id="guest-count" name="guestCount" required="">
+<option value="1">1 Person (Solo Diner)</option>
+<option selected="" value="2">2 Guests</option>
+<option value="3">3 Guests</option>
+<option value="4">4 Guests</option>
+<option value="5">5 - 6 Guests (Family Table)</option>
+<option value="7">7 - 10 Guests (Large Group)</option>
+<option value="10+">10+ Guests (Call Directly)</option>
+</select>
+</div>
+<!-- Occasion or Request -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2" for="special-notes">Special Request (Optional)</label>
+<input class="w-full rounded-xl border-stone-300 focus:border-brand-red focus:ring-brand-red text-stone-800 text-sm py-3 px-4 bg-stone-50/50" id="special-notes" name="specialNotes" placeholder="e.g. Jain food, high chair, birthday" type="text">
+</div>
+</div>
+<!-- Submit Button & Loader -->
+<div class="pt-4">
+<button class="w-full py-4 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-bold text-base shadow-warm-md transition-all flex items-center justify-center gap-2" id="reserve-btn" type="submit">
+<span class="" id="btn-text">Confirm Table Request</span>
+<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white hidden" fill="none" id="btn-spinner" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+</svg>
+</button>
+<p class="text-center text-xs text-stone-500 mt-3">We hold reserved tables for 15 minutes past the slot time.</p>
+</div>
+</form>
+<!-- Success Screen (Initially Hidden) -->
+<div class="hidden text-center py-8 space-y-4" id="booking-success-message">
+<div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
+<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="font-serif text-2xl font-bold text-stone-900">Table Reservation Confirmed!</h3>
+<p class="text-stone-600 text-sm max-w-md mx-auto" id="booking-summary-text">
+              We look forward to hosting you at Anna Idli Shankar Nagar, Raipur. A confirmation message has been queued for your mobile number.
+            </p>
+<div class="inline-block bg-amber-50 border border-amber-200 rounded-xl px-5 py-3 text-xs font-mono text-stone-700">
+              Reference: <strong class="text-brand-red" id="booking-ref-id">#ANNA-RAIPUR-8492</strong>
+</div>
+<div class="pt-4">
+<button class="text-xs uppercase font-bold text-brand-red underline hover:text-brand-redDark" id="book-another-btn" type="button">
+                Book Another Table
+              </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ReservationSection -->
+<!-- BEGIN: ContactAndLocationSection -->
+<section class="py-20 lg:py-24 bg-brand-cream border-t border-amber-200/60" data-purpose="contact-and-location" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Contact Details -->
+<div data-aos="fade-right" class="lg:col-span-6 space-y-8">
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-brand-red bg-red-50 border border-red-200 px-3.5 py-1 rounded-full inline-block mb-3">Visit Us</span>
+<h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 tracking-tight">Anna Idli, Shankar Nagar</h2>
+<p class="text-stone-600 mt-2 text-base">Come experience South Indian warmth right here in Raipur.</p>
+</div>
+<div class="space-y-6">
+<!-- Address -->
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-white border border-amber-200 text-brand-red flex items-center justify-center flex-shrink-0 shadow-sm">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="font-bold text-stone-900 text-base">Address</h4>
+<p class="text-stone-600 text-sm leading-relaxed mt-1">
+                    Lodhipara Chowk, Pandri, Dharsiwa, Ward 11, <br>
+                    Shankar Nagar, Raipur, Chhattisgarh 492004
+                  </p>
+</div>
+</div>
+<!-- Phone Contact -->
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-white border border-amber-200 text-brand-red flex items-center justify-center flex-shrink-0 shadow-sm">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="font-bold text-stone-900 text-base">Phone &amp; Orders</h4>
+<a class="text-brand-red hover:underline font-bold text-base block mt-1" href="tel:+918799904089">+91 87999 04089</a>
+<span class="text-xs text-stone-500">Available for table inquiry and pickup orders</span>
+</div>
+</div>
+<!-- Opening Hours -->
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-white border border-amber-200 text-brand-red flex items-center justify-center flex-shrink-0 shadow-sm">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="font-bold text-stone-900 text-base">Opening Hours</h4>
+<p class="text-stone-700 text-sm font-medium mt-1">Monday – Sunday: 7:30 AM – 10:30 PM</p>
+<p class="text-xs text-stone-500">Breakfast begins prompt at 7:30 AM every morning</p>
+</div>
+</div>
+</div>
+<!-- Direct Action Links -->
+<div class="flex flex-wrap gap-4 pt-2">
+<a class="px-6 py-3 rounded-full bg-brand-red hover:bg-brand-redHover text-white font-semibold text-sm shadow-warm-sm transition-all" href="tel:+918799904089">
+                Call Restaurant
+              </a>
+<a class="px-6 py-3 rounded-full bg-white hover:bg-stone-50 border border-stone-300 text-stone-800 font-semibold text-sm shadow-sm transition-all flex items-center gap-2" href="https://maps.google.com/?q=Anna+Idli+Shankar+Nagar+Raipur" rel="noopener noreferrer" target="_blank">
+<span class="">Get Directions</span>
+<svg class="w-4 h-4 text-stone-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="px-6 py-3 rounded-full bg-rose-50 text-rose-800 hover:bg-rose-100 border border-rose-200 font-semibold text-sm transition-all flex items-center gap-2" href="https://www.instagram.com/annaidli_restaurant/" rel="noopener noreferrer" target="_blank">
+<span class="">Instagram</span>
+</a>
+</div>
+</div>
+<!-- Stylized Map Container -->
+<div class="lg:col-span-6">
+<div class="bg-white p-4 rounded-3xl border border-amber-200 shadow-warm-md relative overflow-hidden">
+<div class="w-full h-96 rounded-2xl bg-stone-100 relative overflow-hidden border border-stone-200 flex flex-col items-center justify-center p-6 text-center">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img alt="Anna Idli Shankar Nagar Raipur Restaurant Entrance and Facade" class="w-full h-full object-cover filter brightness-90 animate-kenburns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPh_rt7hntYMMEzNednBBqGJiA4a2VZJzGZ0lca8mDCeHTjZNODI-bjCUobG3hg0gBQ0FR0oyUra5BKyp-j6BHzMWzV0OWZDJP1dGXrUSO_XOp1MydEql0oW_Ut_rySzT7Yz_6diCBf03prq_-cNfyy6sLs9hbxtqsNnISGaLTJ29rKQwo0idzYDdMjBvRlxC8Ec40NIpIra2Z9-JIX2meVdJfEsB4ffJEHp-2WoNWDramNUm38xKx2UnmNjiEYfQPYV0">
+<div class="absolute inset-0 bg-stone-950/40 backdrop-blur-[2px]"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-stone-950/30 to-black/30"></div>
+</div>
+<!-- Overlay Card with transparent background as requested -->
+<div class="relative z-10 bg-transparent p-4 sm:p-6 max-w-sm mx-auto flex flex-col items-center text-center">
+<!-- Red Pin Icon -->
+<div class="w-12 h-12 rounded-full bg-brand-red text-white flex items-center justify-center shadow-lg mb-3">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"></path>
+</svg>
+</div>
+<h3 class="font-serif font-bold text-xl sm:text-2xl text-white tracking-tight drop-shadow-md">Anna Idli, Shankar Nagar</h3>
+<p class="text-xs sm:text-sm text-stone-200 mt-1 mb-4 drop-shadow">Lodhipara Chowk, Pandri / Shankar Nagar, Raipur</p>
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-brand-red hover:bg-brand-redHover text-white font-bold text-xs uppercase tracking-wider shadow-warm-md hover:shadow-warm-lg transition-all duration-200 hover:scale-105" href="https://maps.google.com/?q=Anna+Idli+Shankar+Nagar+Raipur" rel="noopener noreferrer" target="_blank">
+      Open in Google Maps
+    </a>
+</div>
+<div class="absolute bottom-3 left-3 z-10 bg-white/90 backdrop-blur-sm text-[10px] font-medium text-stone-700 px-3 py-1.5 rounded-md border border-white/50 shadow-sm">Raipur, Chhattisgarh 492004</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ContactAndLocationSection -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-brand-charcoal text-stone-300 pt-16 pb-12 border-t-4 border-brand-red" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-stone-800">
+<!-- Brand Info -->
+<div class="lg:col-span-4 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-white p-0.5 overflow-hidden flex items-center justify-center">
+<img alt="Anna Idli Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPGpS7AKXMpLqt1IXAlGhPhrLvORs-ERBXNQGcwoe5IFgugqWO3PojRUVfsvD8aJXB83kTqrPTsGBnfIG6T90TzIqJeMprojh9WXwBRU63HDR1k_yxzHgTsGdj2nM1FKQr9PnXfnGvqWRZEPLmB0PBjKZhNxoY7PVufLpNrehv-T_cmJ1je_h-ripEIbgNDDx-SXJUYN1emnWTjSJ66zA9kq2O9-4QLQ9akJPN-iADsamijzLvnsIEsGDmxpxPoXBIIKM">
+</div>
+<div>
+<span class="font-serif font-bold text-xl text-white block">ANNA IDLI</span>
+<span class="text-xs text-amber-400 uppercase tracking-widest">Shankar Nagar, Raipur</span>
+</div>
+</div>
+<p class="text-stone-400 text-sm leading-relaxed pr-4">
+            Serving traditional, pure vegetarian South Indian delicacies made with slow-fermented batters, pure cow ghee, and freshly roasted spices.
+          </p>
+<div class="flex items-center gap-3 pt-2">
+<a class="w-9 h-9 rounded-full bg-stone-800 hover:bg-brand-red text-stone-300 hover:text-white flex items-center justify-center transition-colors" href="https://www.instagram.com/annaidli_restaurant/" rel="noopener noreferrer" target="_blank" title="Instagram">
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+</a>
+<a class="w-9 h-9 rounded-full bg-stone-800 hover:bg-brand-red text-stone-300 hover:text-white flex items-center justify-center transition-colors" href="tel:+918799904089" title="Phone">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="lg:col-span-3 space-y-3">
+<h4 class="font-serif font-bold text-white text-base">Quick Navigation</h4>
+<ul class="space-y-2 text-sm text-stone-400">
+<li class=""><a class="hover:text-amber-400 transition-colors" href="#hero">Home</a></li>
+<li class=""><a class="hover:text-amber-400 transition-colors" href="#about">Our Authentic Story</a></li>
+<li class=""><a class="hover:text-amber-400 transition-colors" href="#specialties">Chef's Specialties</a></li>
+<li class=""><a class="hover:text-amber-400 transition-colors" href="#menu">Daily Menu &amp; Prices</a></li>
+<li class=""><a class="hover:text-amber-400 transition-colors" href="#reservation">Book a Table</a></li>
+<li class=""><a class="hover:text-amber-400 transition-colors" href="#contact">Location &amp; Directions</a></li>
+</ul>
+</div>
+<!-- Timings & Specialties -->
+<div class="lg:col-span-5 space-y-3">
+<h4 class="font-serif font-bold text-white text-base">Hospitality Hours</h4>
+<p class="text-sm text-stone-400">
+<strong class="text-white">Daily Timings:</strong> 7:30 AM – 10:30 PM (No Closed Days)
+          </p>
+<div class="p-4 rounded-xl bg-stone-900 border border-stone-800 text-xs text-stone-400 space-y-1.5 mt-3">
+<p class=""><span class="text-amber-400 font-semibold">Morning Breakfast:</span> 7:30 AM – 11:30 AM</p>
+<p class=""><span class="text-amber-400 font-semibold">Traditional Meals:</span> 12:30 PM – 3:30 PM</p>
+<p class=""><span class="text-amber-400 font-semibold">Evening Kaapi &amp; Tiffin:</span> 4:30 PM – 10:30 PM</p>
+</div>
+</div>
+</div>
+<!-- Copyright Notice -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+<p class="">© 2026 Anna Idli (Shankar Nagar, Raipur). All rights reserved.</p>
+<p class="flex items-center gap-2">
+<span class="">100% Pure Vegetarian South Indian Restaurant</span>
+<span class="">•</span>
+<span class="">Raipur, Chhattisgarh</span>
+</p>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: LightboxModal -->
+<div aria-label="Image preview" aria-modal="true" class="fixed inset-0 z-50 bg-black/95 items-center justify-center p-4 hidden" id="lightbox-modal" role="dialog">
+<button aria-label="Close Lightbox" class="absolute top-5 right-5 text-white/80 hover:text-white p-2 text-3xl font-light focus:outline-none" id="lightbox-close">
+      ✕
+    </button>
+<div class="max-w-4xl max-h-[90vh] flex flex-col items-center">
+<img alt="Crispy Masala Dosa folded into a distinct perfect triangular cone" class="max-w-full max-h-[75vh] object-contain rounded-xl shadow-2xl" id="lightbox-image" src="https://lh3.googleusercontent.com/aida/AEtjO1UAQyo2L2w9ZobGvJeQf4t8l0Ft6CKyhWjSntrZ3owqJ7cPJJX_tkXulH6ygn80H9Au5VjvvsOjp3pwMLTzJxUs77K-vX7IHY7DHis5MZc1dUhcPa1YCxbmZttFezWlBYaDaId1QUiBphI_hXI7FXCKTZ92bdNdTl8jhMf-C_DvESf7HVmFrMEUEZy7fUFvTefejPtkwMuNQuLOzieg1SU9aH3MllP_QXr9uMfdxVrufeiaH39ZcgYd4QuF">
+<p class="text-stone-300 text-sm sm:text-base mt-4 text-center font-medium max-w-xl" id="lightbox-caption">Tasty Batata Vada - Golden crispy spiced potato dumplings served with fresh chutneys and fried chilies</p>
+</div>
+</div>
+<!-- END: LightboxModal -->
+<!-- BEGIN: InteractiveScripts -->
+<!-- Navigation Toggle Script -->
+<script data-purpose="navigation-toggle">
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-icon');
+      const navLinks = document.querySelectorAll('.mobile-nav-link');
+
+      function toggleMenu() {
+        const isExpanded = mobileBtn.getAttribute('aria-expanded') === 'true';
+        mobileBtn.setAttribute('aria-expanded', !isExpanded);
+        mobileMenu.classList.toggle('hidden');
+        hamburgerIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      }
+
+      mobileBtn.addEventListener('click', toggleMenu);
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (!mobileMenu.classList.contains('hidden')) {
+            toggleMenu();
+          }
+        });
+      });
+    });
+  </script>
+<!-- Interactive Menu Filter Script -->
+<script data-purpose="menu-filtering">
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.menu-filter-btn');
+      const menuItems = document.querySelectorAll('.menu-item');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const filter = this.getAttribute('data-filter');
+
+          // Style active button
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-brand-red', 'text-white', 'shadow-warm-sm');
+            b.classList.add('bg-white', 'text-stone-700', 'border', 'border-amber-200');
+          });
+          this.classList.remove('bg-white', 'text-stone-700', 'border', 'border-amber-200');
+          this.classList.add('bg-brand-red', 'text-white', 'shadow-warm-sm');
+
+          // Filter card items
+          menuItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              item.style.display = 'flex';
+              item.classList.add('animate-fadeIn');
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+<!-- Lightbox Gallery Script -->
+<script data-purpose="gallery-lightbox">
+    document.addEventListener('DOMContentLoaded', function() {
+      const triggers = document.querySelectorAll('.gallery-trigger');
+      const modal = document.getElementById('lightbox-modal');
+      const img = document.getElementById('lightbox-image');
+      const caption = document.getElementById('lightbox-caption');
+      const closeBtn = document.getElementById('lightbox-close');
+
+      triggers.forEach(item => {
+        item.addEventListener('click', function() {
+          const src = this.getAttribute('data-img-src');
+          const cap = this.getAttribute('data-caption');
+          img.src = src;
+          caption.textContent = cap;
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function closeModal() {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+        img.src = '';
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+    });
+  </script>
+<!-- Reservation System Simulation Script -->
+<script data-purpose="reservation-handler">
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('table-reservation-form');
+      const reserveBtn = document.getElementById('reserve-btn');
+      const btnText = document.getElementById('btn-text');
+      const btnSpinner = document.getElementById('btn-spinner');
+      const successMessage = document.getElementById('booking-success-message');
+      const refIdDisplay = document.getElementById('booking-ref-id');
+      const summaryText = document.getElementById('booking-summary-text');
+      const bookAnotherBtn = document.getElementById('book-another-btn');
+      const dateInput = document.getElementById('booking-date');
+
+      // Pre-set min date to today
+      const today = new Date().toISOString().split('T')[0];
+      if (dateInput) {
+        dateInput.min = today;
+        dateInput.value = today;
+      }
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Simple validation checks
+        let isValid = true;
+        const nameField = document.getElementById('guest-name');
+        const phoneField = document.getElementById('guest-phone');
+        const slotField = document.getElementById('booking-slot');
+
+        [nameField, phoneField, slotField].forEach(field => {
+          const errorSpan = field.nextElementSibling;
+          if (!field.checkValidity() || !field.value.trim()) {
+            isValid = false;
+            if (errorSpan && errorSpan.classList.contains('form-error')) {
+              errorSpan.classList.remove('hidden');
+            }
+          } else {
+            if (errorSpan && errorSpan.classList.contains('form-error')) {
+              errorSpan.classList.add('hidden');
+            }
+          }
+        });
+
+        if (!isValid) return;
+
+        // Simulate reservation API call
+        reserveBtn.disabled = true;
+        btnText.textContent = "Checking Availability...";
+        btnSpinner.classList.remove('hidden');
+
+        setTimeout(() => {
+          reserveBtn.disabled = false;
+          btnText.textContent = "Confirm Table Request";
+          btnSpinner.classList.add('hidden');
+
+          const guestCount = document.getElementById('guest-count').value;
+          const randomId = Math.floor(1000 + Math.random() * 9000);
+          refIdDisplay.textContent = `#ANNA-RAIPUR-${randomId}`;
+          summaryText.innerHTML = `Thank you, <strong>${nameField.value}</strong>! Table for <strong>${guestCount} guest(s)</strong> requested on <strong>${dateInput.value}</strong> (${slotField.value}). Our Shankar Nagar team will hold your table with pure South Indian hospitality.`;
+
+          form.classList.add('hidden');
+          successMessage.classList.remove('hidden');
+        }, 800);
+      });
+
+      bookAnotherBtn.addEventListener('click', function() {
+        form.reset();
+        if (dateInput) dateInput.value = today;
+        successMessage.classList.add('hidden');
+        form.classList.remove('hidden');
+      });
+    });
+  </script>
+<!-- END: InteractiveScripts -->
+
+
+
+
+
+
+
+<!-- AOS & Lenis JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+<script>
+  // Initialize Lenis
+  const lenis = new Lenis({ duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+
+  // Initialize AOS
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-out-cubic',
+    offset: 50
+  });
+</script>
+</body>
+</html>
